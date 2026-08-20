@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveller Market — AI-подбор отелей и туров</title>
+  <meta name="description" content="Traveller Market — сервис подбора отелей и туров через AI-диалог. Реальные туры от 90+ туроператоров, персональные рекомендации, мониторинг цен.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="logo">Traveller<span>.market</span></div>
+      <div class="nav-links">
+        <a href="#how">Как работает</a>
+        <a href="#features">Возможности</a>
+        <a href="#status">Статус</a>
+        <a href="#partners">Партнёрам</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="hero-badge">AI-консьерж для путешествий</div>
+      <h1>Найди свой идеальный отель.<br><span class="accent">Не по рейтингу — по себе.</span></h1>
+      <p class="hero-sub">
+        Расскажите, что вам важно — песчаный пляж, тихий отель, развлечения для ребёнка.
+        Traveller Market подберёт отели, которые <strong>реально можно купить</strong> — с ценой, датами и туроператором.
+      </p>
+      <div class="hero-cta">
+        <a href="#how" class="btn btn-primary">Как это работает</a>
+        <a href="#demo" class="btn btn-ghost">Пример подбора ↓</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-num">90+</div><div class="stat-label">туроператоров</div></div>
+        <div class="stat"><div class="stat-num">500+</div><div class="stat-label">отелей в базе</div></div>
+        <div class="stat"><div class="stat-num">3</div><div class="stat-label">секунды на подбор</div></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROBLEM -->
+  <section class="section problem" id="problem">
+    <div class="container">
+      <h2>Проблема</h2>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-emoji">🔍</div>
+          <h3>Поисковики не понимают</h3>
+          <p>«Тихий отель с хорошим пляжем» — это запрос, который ни один фильтр не может обработать. Фильтры дают 4 000 отелей, из которых подходят 3.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-emoji">💸</div>
+          <h3>Отзывы — это лотерея</h3>
+          <p>Один отель хвалят за еду, другой ругают за шум. Но кто хвалил — семья с детьми или пара без детей? Обычно непонятно.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-emoji">⏳</div>
+          <h3>Подбор занимает недели</h3>
+          <p>Средний пользователь тратит 10+ часов на поиски, 20 вкладок, 3 турагентства. И всё равно сомневается в выборе.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section class="section solution" id="how">
+    <div class="container">
+      <h2>Как работает Traveller Market</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Вы описываете желания</h3>
+          <p>«Хочу Турцию в августе, вылет из Москвы, ребёнок 11 лет, до 250 000 ₽, хороший пляж и вкусная еда».</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>AI понимает вас</h3>
+          <p>Превращает пожелания в структурированные критерии: курорт, категория, питание, бюджет, приоритеты.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Ищем реальные туры</h3>
+          <p>Запрашиваем актуальные цены у 90+ туроператоров. Показываем только то, что реально можно купить сегодня.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>Объясняем выбор</h3>
+          <p>«Этот отель подходит вам на 96%: пляж 9.7, питание 9.1, для ребёнка 11 лет — 9.4. А вот этот на 39 000 ₽ дешевле».</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO -->
+  <section class="section demo" id="demo">
+    <div class="container">
+      <h2>Пример подбора</h2>
+      <div class="demo-window">
+        <div class="demo-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="demo-title">Traveller Market</span>
+        </div>
+        <div class="demo-body">
+          <div class="msg msg-user">Хочу Турцию, 7 ночей, вылет из Москвы в конце августа. Один взрослый. До 250 000 ₽. Хороший пляж, ультра всё включено.</div>
+          <div class="msg msg-ai">
+            <div class="ai-hotel">
+              <div class="ai-rank">🥇 Лучший для вас</div>
+              <div class="ai-name">Movenpick Hotel Antalya Tekirova</div>
+              <div class="ai-match">Match <strong>96%</strong> · от <strong>185 115 ₽</strong> · 7 ночей · UAI</div>
+              <div class="ai-scores">
+                <span>🏖 Пляж 9.7</span>
+                <span>🍴 Питание 9.1</span>
+                <span>👧 Для 11 лет 9.4</span>
+                <span>🔇 Тишина 8.8</span>
+              </div>
+              <div class="ai-note">Нашёл 7 вариантов этого отеля. Лучший по цене — ICS Travel Group, 185 115 ₽.</div>
+            </div>
+          </div>
+          <div class="msg msg-user">А есть что-то тише и дешевле?</div>
+          <div class="msg msg-ai">
+            <div class="ai-hotel">
+              <div class="ai-rank">№2 · Match 93%</div>
+              <div class="ai-name">RAI Premium Tekirova</div>
+              <div class="ai-match">от <strong>167 400 ₽</strong> · тише на 15% · Match 93%</div>
+              <div class="ai-note">Уступает только по пляжу (8.9 против 9.7), зато на 17 700 ₽ дешевле и заметно тише.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section features" id="features">
+    <div class="container">
+      <h2>Возможности</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-icon">🎯</div>
+          <h3>Match Score</h3>
+          <p>Оценка отеля под ваши критерии от 0 до 100%. Не «хороший отель», а «подходит именно вам».</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">💎</div>
+          <h3>Deal Score</h3>
+          <p>Отдельная оценка выгоды предложения. Отель может быть идеальным, но у другого оператора он дешевле на 40 000 ₽.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">📊</div>
+          <h3>Price Watch</h3>
+          <p>Отслеживаем цены на понравившиеся отели и сообщаем, когда они снижаются.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🏖</div>
+          <h3>Пляж, еда, тишина</h3>
+          <p>Собственные оценки отелей по критериям из отзывов и описаний — не официальная «маркетинговая правда».</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATUS -->
+  <section class="section status" id="status">
+    <div class="container">
+      <h2>Статус проекта</h2>
+      <div class="status-list">
+        <div class="status-item done">
+          <div class="status-check">✅</div>
+          <div class="status-text"><strong>Интеграция Tourvisor API</strong> — поиск туров, описания отелей, справочники (90+ туроператоров)</div>
+        </div>
+        <div class="status-item done">
+          <div class="status-check">✅</div>
+          <div class="status-text"><strong>База отелей Турции</strong> — 500+ отелей 5★ с полными описаниями, координатами и рейтингами</div>
+        </div>
+        <div class="status-item done">
+          <div class="status-check">✅</div>
+          <div class="status-text"><strong>Price Watch</strong> — автоматический мониторинг цен на отели (3 раза в день)</div>
+        </div>
+        <div class="status-item">
+          <div class="status-check">🔜</div>
+          <div class="status-text"><strong>Интеграция отзывов</strong> — подключение Яндекс Путешествий для отзывов на русском языке</div>
+        </div>
+        <div class="status-item">
+          <div class="status-check">🔜</div>
+          <div class="status-text"><strong>Matching Engine</strong> — алгоритм персональных рекомендаций</div>
+        </div>
+        <div class="status-item">
+          <div class="status-check">🔜</div>
+          <div class="status-text"><strong>Web-интерфейс и подписка</strong> — MVP для первых пользователей</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="section partners" id="partners">
+    <div class="container">
+      <h2>Партнёрам</h2>
+      <p class="partners-lead">Мы строим B2C-подписочный сервис для русскоязычных путешественников. Нам нужны надёжные источники данных отелей и отзывов.</p>
+      <div class="partners-grid">
+        <div class="partner-card">
+          <h3>🤝 Почему с нами интересно</h3>
+          <ul>
+            <li>Реальная аудитория: подписчики, готовые платить за качественный подбор</li>
+            <li>Объём запросов: тысячи поисков отелей в месяц уже на этапе MVP</li>
+            <li>Долгосрочная модель: подписка → стабильный трафик → монетизация бронирований</li>
+          </ul>
+        </div>
+        <div class="partner-card">
+          <h3>📡 Что мы используем</h3>
+          <ul>
+            <li><strong>Tourvisor API</strong> — туры и цены от 90+ туроператоров</li>
+            <li><strong>Яндекс Путешествия API</strong> — отзывы отелей на русском, бронирование</li>
+            <li><strong>Собственный AI</strong> — парсинг отзывов, оценки, рекомендации</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta">
+    <div class="container">
+      <h2>Готовы попробовать?</h2>
+      <p>Мы в активной разработке. Оставьте заявку — пришлём приглашение на закрытую бета-версию.</p>
+      <a href="mailto:hello@traveller.market" class="btn btn-primary">hello@traveller.market</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="logo">Traveller<span>.market</span></div>
+        <div class="footer-links">
+          <a href="#top">Наверх</a>
+          <a href="#how">Как работает</a>
+          <a href="#partners">Партнёрам</a>
+        </div>
+        <div class="footer-copy">© 2026 Traveller Market</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
