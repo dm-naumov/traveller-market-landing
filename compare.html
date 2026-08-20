@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traveller Market — Выбор варианта обложки</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+font-family: 'Inter', -apple-system, sans-serif;
+background: #1a2530;
+color: #fff;
+min-height: 100vh;
+}
+.bar {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background: rgba(0,0,0,0.85);
+backdrop-filter: blur(10px);
+padding: 12px 24px;
+z-index: 100;
+display: flex;
+gap: 12px;
+align-items: center;
+justify-content: center;
+}
+.bar-label { font-size: 13px; opacity: 0.7; margin-right: 8px; }
+.bar a {
+padding: 8px 16px;
+background: #046380;
+color: #fff;
+border-radius: 6px;
+font-size: 13px;
+font-weight: 600;
+text-decoration: none;
+transition: background 0.15s;
+}
+.bar a:hover { background: #024e66; }
+.bar a.active { background: #ffd89e; color: #1a2530; }
+iframe {
+width: 100%;
+height: 100vh;
+border: none;
+margin-top: 56px;
+}
+</style>
+</head>
+<body>
+<div class="bar">
+<span class="bar-label">Вариант</span>
+<a href="?v=1" id="v1">1. Стоковая + фильтр</a>
+<a href="?v=2" id="v2">2. Синее небо</a>
+<a href="?v=3" id="v3">3. SVG-иллюстрация</a>
+</div>
+<iframe id="frame" src="about:blank</iframe>
+<script>
+const params = new URLSearchParams(window.location.search);
+const v = params.get('v') || '2';
+document.getElementById('frame').src = `variant-${v}.html`;
+document.getElementById('v' + v).classList.add('active');
+</script>
+</body>
+</html>
